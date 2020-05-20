@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".TrackCountries">
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:paddingLeft="10dp"
+        android:maxLines="1"
+        android:hint="Search"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:drawablePadding="18dp"
+        android:drawableLeft="@drawable/search"
+        android:background="@drawable/search_back"/>
+
+    <ListView
+        android:id="@+id/data_list"
+        android:layout_below="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="18dp"/>
+
+
+</RelativeLayout>
